@@ -1,4 +1,4 @@
 require_relative '../lib/test_won?.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-print won?(board)
+puts won?(board)
