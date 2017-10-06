@@ -24,12 +24,12 @@ def won?(board)
           current = win
       end
     end
-    if someone_won == true
-      current
-    else
-      someone_won
-    end
+    current
+    someone_won
+else
+  false
   end
+end
 
 def full?(board)
   if board.all? {|draw| draw == "X" || draw == "O"}
