@@ -19,10 +19,11 @@ def won?(board)
       false
   elsif board.all? {|current_player| current_player == "X" || current_player == "O"}
     current = []
-    [0, 1, 2, 3, 4, 5, 6, 7, 8].each do |i|
+    WIN_COMBINATIONS.each do |win|
       current << i if board(i) == "X"
     end
     WIN_COMBINATIONS.each do |win|
+      if current == |win|
       win.all do |winning_index|
           if board(winning_index) == "X" || board(winning_index) == "O"
             true
