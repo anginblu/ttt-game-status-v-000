@@ -26,6 +26,7 @@ def won?(board)
         board(i) == "O"
         current = win
         else
+          false
         end
       end
     end
