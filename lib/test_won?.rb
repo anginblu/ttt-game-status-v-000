@@ -19,6 +19,7 @@ def won?(board)
   someone_won = false
   current = []
   WIN_COMBINATIONS.each do |win|
+    win.each do |i|
   current << i if win.all? {|i| board[i] == "X"} == true
     puts current
   end
