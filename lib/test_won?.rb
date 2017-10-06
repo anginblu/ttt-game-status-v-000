@@ -24,6 +24,7 @@ def won?(board)
   end
   if someone_won = true
     current << i if board [i] == "X"
+    current
   else
     someone_won
 
