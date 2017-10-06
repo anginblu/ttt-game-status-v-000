@@ -16,10 +16,17 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 
 def won?(board)
-  someone_won = false
-  current = []
   WIN_COMBINATIONS.each do |win|
-    win_index_1 = win_combination[0]
+    win_index_1 = win[0]
+    win_index_2 = win[1]
+    win_index_3 = win[2]
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      win
+    else
+      false
     end
   puts someone_won
   print current
