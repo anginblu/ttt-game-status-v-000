@@ -24,6 +24,7 @@ def won?(board)
           current = win
       end
     end
+  end
 end
 
 def full?(board)
