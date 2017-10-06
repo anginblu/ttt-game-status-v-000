@@ -27,7 +27,7 @@ def won?(board)
   end
   if someone_won
     current
-  else 
+  else
     false
 end
 
