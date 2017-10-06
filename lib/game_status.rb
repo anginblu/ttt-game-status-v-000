@@ -18,7 +18,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win|
     win.all do |winning_index|
         if board(winning_index) == "X" || board(winning_index) == "O"
-        win
+          true
         end
       end
   end
