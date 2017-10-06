@@ -22,6 +22,7 @@ def won?(board)
     win.all? {|i| board[i] == "X"}
     if win == true
       current = win
+    end
    end
      puts current
    end
