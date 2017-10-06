@@ -32,5 +32,5 @@ def won?(board)
       puts false
     end
   end
-  
+  if position_taken?(board, current)
 end
