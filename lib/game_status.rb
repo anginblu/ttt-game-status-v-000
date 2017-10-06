@@ -19,6 +19,8 @@ def won?(board)
     win.all do |winning_index|
         if board(winning_index) == "X" || board(winning_index) == "O"
           true
+        else
+          false
         end
       end
   end
