@@ -34,4 +34,5 @@ def won?(board)
   end
   if position_taken?(board, current)
     puts current
+  end
 end
