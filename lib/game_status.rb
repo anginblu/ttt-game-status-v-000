@@ -18,7 +18,7 @@ def won?(board)
   if board.all? {|current_index| current_index == " " || current_index == ""}
       false
   elsif board.all? {|current_index| current_index == "X" || current_index == "O"}
-
+    if 
     WIN_COMBINATIONS.each do |win|
       win.all do |winning_index|
           if board(winning_index) == "X" || board(winning_index) == "O"
