@@ -30,7 +30,7 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all? {|draw| draw.is_a?(String)}
+  if board.all? {|draw| draw == "X" || draw == "O"}
     true
   else
     false
