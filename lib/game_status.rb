@@ -21,8 +21,7 @@ def won?(board)
       win.each do |i|
         if win.all?
         board(i) == "X"
-        current = win
-        current
+        win
         elsif win.all?
         board(i) == "O"
         current = win
