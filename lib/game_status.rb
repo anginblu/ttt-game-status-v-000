@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 def won?(board)
   WIN_COMBINATIONS.each do |win|
       win.all do |winning_index|
-        if board(winning_index) == "X" || oard(winning_index) == "X" 
+        if board(winning_index) == "X" || board(winning_index) == "X"
         print ""
   else
     false
