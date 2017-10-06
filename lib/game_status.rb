@@ -25,6 +25,10 @@ def won?(board)
       end
     end
   end
+  if someone_won
+    current
+  else 
+    false
 end
 
 def full?(board)
