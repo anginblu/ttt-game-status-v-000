@@ -20,9 +20,12 @@ def won?(board)
     if position_taken?(board, index)
       WIN_COMBINATIONS.each do |win|
         win.each do |i|
-          if board(i) == "X"
-            current << i 
+          if index == i
+            current << i
           end
+        end
+      end
+    end
 
     end
   end
