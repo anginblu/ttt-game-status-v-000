@@ -22,7 +22,7 @@ def won?(board)
       if win.all? {|i| board(i) == "X" || board(i) == "O"}
           someone_won == true
           current = win
-        end
+      end
     end
 end
 
