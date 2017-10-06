@@ -19,8 +19,9 @@ def won?(board)
     current = []
     WIN_COMBINATIONS.each do |win|
       win.each do |i|
-        if board(i) == "X"
-
+        if win.all?
+        board(i) == "X"
+        current = win
   else false
   end
 end
