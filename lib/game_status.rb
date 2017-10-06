@@ -15,7 +15,8 @@ win8 = [6,4,2]
 WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
-  if board.any? {|current_player| current_player == "X" || current_player == "O"}
+  board.each do {index|
+    if position_taken?(board, index)
     WIN_COMBINATIONS.each do |win|
       someone_won == false
       current = []
