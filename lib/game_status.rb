@@ -24,8 +24,7 @@ def won?(board)
         win
         elsif win.all?
         board(i) == "O"
-        current = win
-        current
+        win
         else
           false
         end
