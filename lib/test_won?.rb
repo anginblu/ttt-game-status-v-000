@@ -25,5 +25,6 @@ def won?(board)
       someone_won = true
     end
   someone_won
+  current
    end
 end
