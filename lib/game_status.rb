@@ -17,9 +17,9 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 def won?(board)
   board.each do |index|
     if position_taken?(board, index)
-      win1.all? |i|
+      WIN_COMBINATIONS. each do |i|
         board(i) == "X"
-          
+
     end
   end
 end
