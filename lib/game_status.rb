@@ -18,7 +18,7 @@ def won?(board)
   if board.any? {|current_player| current_player == "X" || current_player == "O"}
     someone_won == false
     WIN_COMBINATIONS.each do |win|
-      win.all do |i| 
+      win.all do |i|
         someone_won == true if board(i) == "X" || board(i) == "O"
       end
       if someone_won == true
