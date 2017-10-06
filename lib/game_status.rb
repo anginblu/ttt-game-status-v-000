@@ -15,11 +15,11 @@ win8 = [6,4,2]
 WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
-  board (index) = current_index
   if board.all? {|current_index| current_index == " " || current_index == ""}
       false
   elsif board.all? {|current_index| current_index == "X" || current_index == "O"}
-    if 
+    current_index = board(index)
+    if
     WIN_COMBINATIONS.each do |win|
       win.all do |winning_index|
           if board(winning_index) == "X" || board(winning_index) == "O"
