@@ -19,8 +19,7 @@ def won?(board)
   board.all do |index|
     if position_taken?(board, index) == false
     someone_won
-  end
-  end
+    end
   end
 end
 
