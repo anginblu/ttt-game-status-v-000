@@ -19,22 +19,16 @@ def won?(board)
   current = []
   if board.any? {|current_player| current_player == "X" || current_player == "O"}
     WIN_COMBINATIONS.each do |win|
-      win.all? {|i| board(i) == "X"}
+      win.all? {|i| board(i) == "X" || board(i) == "O"}
           someone_won == true
           current = win
       end
-      win.all? {|i| board(i) == "O"}
-          someone_won == true
-          current = win
-      end
+    end    
+    if someone_won == true
+      current
+    else
+      someone_won
     end
-  else
-    false
-  end
-  if someone_won == true
-    current
-  else
-    someone_won
   end
 end
 
