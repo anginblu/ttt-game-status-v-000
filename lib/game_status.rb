@@ -22,8 +22,12 @@ def won?(board)
       win.all? {|i| board(i) == "X"}
           someone_won == true
           current = win
-          current
       end
+      win.all? {|i| board(i) == "O"}
+          someone_won == true
+          current = win
+      end
+      current
     end
   elsif board.all? {|current_player| current_player == "X" || current_player == "O"}
     false
