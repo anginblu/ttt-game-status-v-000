@@ -20,4 +20,5 @@ def won?(board)
     someone_won = true if win.all? {|i| board[i] == "X"}
     someone_won = true if win.all? {|i| board[i] == "O"}
   end
+  someone_won
 end
