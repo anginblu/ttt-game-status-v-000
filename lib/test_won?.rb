@@ -18,7 +18,7 @@ def won?(board)
   current =[]
   WIN_COMBINATIONS.each do |win|
     win.each do |i|
-      current << i if position_taken?(board, i) && board[i] == "X"
+      current << i if board[i] == "X"
     end
   end
 end
