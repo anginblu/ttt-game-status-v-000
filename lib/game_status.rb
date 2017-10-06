@@ -23,6 +23,7 @@ def won?(board)
           someone_won == true
           current = win
       end
+      someone_won 
       current
     end
   end
