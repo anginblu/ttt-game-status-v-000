@@ -16,9 +16,6 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
   if board.any? {|current_player| current_player == "X" || current_player == "O"}
-
-  else false
-  elsif board.any? {|current_player| current_player == "X" || current_player == "O"}
     current = []
     WIN_COMBINATIONS.each do |win|
       current << i if board(i) == "X"
@@ -36,7 +33,8 @@ def won?(board)
         win
       end
     end
-  end
+  else false
+end
 end
 
 def full?(board)
