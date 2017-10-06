@@ -30,7 +30,6 @@ def won?(board)
       someone_won
     end
   end
-end
 
 def full?(board)
   if board.all? {|draw| draw == "X" || draw == "O"}
