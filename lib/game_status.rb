@@ -18,8 +18,10 @@ def won?(board)
   if board.all? {|current_player| current_player == " " || current_player == ""}
       false
   elsif board.all? {|current_player| current_player == "X" || current_player == "O"}
-    current_index = board(index)
-    if
+    current = []
+    [0, 1, 2, 3, 4, 5, 6, 7, 8].each do |i|
+      current << i if board(i) == "X"
+    end
     WIN_COMBINATIONS.each do |win|
       win.all do |winning_index|
           if board(winning_index) == "X" || board(winning_index) == "O"
