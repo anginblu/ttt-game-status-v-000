@@ -15,19 +15,13 @@ win8 = [6,4,2]
 WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
-  board.each do |index|
-    if position_taken?(board, index)
+  WIN_COMBINATIONS.each do |win|
+    win.each do |i|
       current =[]
-      WIN_COMBINATIONS.each do |win|
-        win.each do |i|
-          if index == i
-            current << i
-          end
-        end
+      if position_taken?(board, i)
+        current << i
       end
     end
-  end
-  WIN_COMBINATIONS.each do |win|
     if current == win
       current
     else
