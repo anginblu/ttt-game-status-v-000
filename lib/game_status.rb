@@ -21,8 +21,7 @@ def won?(board)
       win.all do |i|
         if board(i) == "X"
         win
-        elsif win.all?
-        board(i) == "O"
+        elsif board(i) == "O"
         win
         else
           false
