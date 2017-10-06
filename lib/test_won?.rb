@@ -25,7 +25,6 @@ def won?(board)
       elsif  board[i] == "O"
         current = win
         someone_won == true
-
       else
         someone_won
       end
