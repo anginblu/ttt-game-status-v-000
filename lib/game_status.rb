@@ -23,6 +23,10 @@ def won?(board)
         board(i) == "X"
         current = win
         end
+        if win.all?
+        board(i) == "O"
+        current = win
+        end
   else false
   end
 end
