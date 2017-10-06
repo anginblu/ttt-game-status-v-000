@@ -20,10 +20,10 @@ def won?(board)
     win.each do |i|
       current << i if position_taken?(board, i)
     end
-    if current == win
-      current
-    else
-      false
-    end
+  end
+  if current == win
+    current
+  else
+    false
   end
 end
