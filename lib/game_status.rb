@@ -15,6 +15,7 @@ win8 = [6,4,2]
 WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board = ["X", "O" "X"])
+  board(index) = player
   if board.all? {|draw| draw.is_a?(String)}
     board.select do |draw|
       draw == "X"
