@@ -21,7 +21,7 @@ def won?(board)
     win.all? do |i|
       current << i if board[i] == "X"
   end
-  if someone_won
+  if current !== win
     current << i if board [i] == "X"
     current
   else
