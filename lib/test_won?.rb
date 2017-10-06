@@ -23,7 +23,7 @@ def won?(board)
         current << i
         someone_won == true
       elsif  board[i] == "O"
-        current = win
+        current << i
         someone_won == true
       else
         someone_won
