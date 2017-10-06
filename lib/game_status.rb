@@ -18,7 +18,7 @@ def won?(board)
   board.all? {|current_index| current_index == " " || current_index == ""}
     false
   end
-    
+  if board.any? {current_index| current_index == "X" || current_index == "O"}
   WIN_COMBINATIONS.each do |win|
     win.all do |winning_index|
         if board(winning_index) == "X" || board(winning_index) == "O"
@@ -50,4 +50,3 @@ def draw?(board)
 end
 
 def over?(board)
-  
