@@ -16,17 +16,10 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
   if board.any? {|index| position_taken?(board, index) == true}
-
-    WIN_COMBINATIONS.each do |win|
-      someone_won == false
-      current = []
-      if win.all? {|i| position_taken?(board, i)}
-          someone_won == true
-          current = win
-      end
-      someone_won
-      current
+    if win1.all? {|i| position_taken?(board, i) == true}
+      win1
     end
+  end
   elsif board.all? {|index| position_taken?(board, index) == false}
     false
   end
