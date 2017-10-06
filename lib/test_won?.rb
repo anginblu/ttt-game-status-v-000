@@ -20,7 +20,7 @@ def won?(board)
     someone_won = false
     win.all? do |i|
       if board[i] == "X"
-        current = win
+        current << i
         someone_won == true
       elsif  board[i] == "O"
         current = win
