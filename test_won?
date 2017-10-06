@@ -1,0 +1,13 @@
+def won?(board)
+  current =[]
+  WIN_COMBINATIONS.each do |win|
+    win.each do |i|
+      current << i if position_taken?(board, i) && board(i) == "X"
+    end
+  end
+  unless current ==
+    false
+  end
+end
+
+board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
