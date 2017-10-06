@@ -1,6 +1,6 @@
 require_relative '../lib/test_won?.rb'
 
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-puts won?(board)
 
 print WIN_COMBINATIONS
+print win1
