@@ -19,10 +19,8 @@ def won?(board)
   board.all do |index|
     if position_taken?(board, index) == false
     someone_won
-  elsif board.any? {|index| position_taken?(board, index) == true}
-    if win1.all? {|i| position_taken?(board, i) == true}
-      win1
-    end
+  end
+  end
   end
 end
 
