@@ -22,7 +22,8 @@ def won?(board)
       end
       win.all do {|i| someone_won == true if board(i) == "O"}
       end
-      if 
+      if someone_won == true
+        win
     end
   else false
   end
