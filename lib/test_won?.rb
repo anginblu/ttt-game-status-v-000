@@ -26,5 +26,4 @@ def won?(board)
     end
   puts someone_won
   current
-   end
 end
