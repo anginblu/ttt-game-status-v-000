@@ -22,4 +22,4 @@ def won?(board)
   current << i if win.all? {|i| board[i] == "X"} == true
     puts current
   end
-  end
+end
