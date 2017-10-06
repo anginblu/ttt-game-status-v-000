@@ -30,7 +30,9 @@ def won?(board)
           someone_won == true
           current = win
       end
-      current
+      if someone_won == true
+        current
+      end
     end
   elsif board.all? {|current_player| current_player == "X" || current_player == "O"}
     false
