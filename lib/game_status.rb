@@ -29,7 +29,7 @@ def won?(board)
     end
   elsif board.all? {|current_player| current_player == "X" || current_player == "O"}
     flase
-    else false
+  else false
   end
 end
 
