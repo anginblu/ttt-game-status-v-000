@@ -23,7 +23,7 @@ def won?(board)
     someone_won = false if win.any? {|i| board[i] == " "}
   end
   if someone_won = true
-    current << i if 
+    current << i if board [i] == "X"
   else
     someone_won
 
