@@ -18,23 +18,11 @@ def won?(board)
   if board.any? {|current_player| current_player == "X" || current_player == "O"}
     current = []
     WIN_COMBINATIONS.each do |win|
-      current << i if board(i) == "X"
-    end
-    WIN_COMBINATIONS.each do |win|
-      if current == |win|
-      win.all do |winning_index|
-          if board(winning_index) == "X" || board(winning_index) == "O"
-            true
-          else
-            false
-          end
-        end
-      if true
-        win
-      end
-    end
+      win.all do |i|
+        if board(i) == "X"
+
   else false
-end
+  end
 end
 
 def full?(board)
