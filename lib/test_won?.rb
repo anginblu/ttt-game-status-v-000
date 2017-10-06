@@ -28,8 +28,6 @@ def won?(board)
       current = [win[0], win[1], win[2]]
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       current = [win[0], win[1], win[2]]
-    else
-      
     end
   end
   if position_taken?(board, current)
