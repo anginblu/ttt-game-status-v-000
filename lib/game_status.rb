@@ -15,7 +15,7 @@ win8 = [6,4,2]
 WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
-  board.any do |win|
+  board.any do |draw|
     win.each do |win_combination|
 
 end
