@@ -25,6 +25,5 @@ def won?(board)
       someone_won = true
     end
   puts someone_won
-  current
-  someone_won
+  puts current
 end
