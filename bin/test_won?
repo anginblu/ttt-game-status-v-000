@@ -3,12 +3,4 @@ require_relative '../lib/test_won?.rb'
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 puts won?(board)
 
-win1 = [0,1,2]
-win2 = [3,4,5]
-win3 = [6,7,8]
-win4 = [0,3,6]
-win5 = [1,4,7]
-win6 = [2,5,8]
-win7 = [0,4,8]
-win8 = [6,4,2]
-WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
+print WIN_COMBINATIONS
