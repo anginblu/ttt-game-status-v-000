@@ -27,6 +27,7 @@ def won?(board)
         current = win
         end
       end
+    end
   else false
   end
 end
