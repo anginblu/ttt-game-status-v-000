@@ -25,10 +25,9 @@ def won?(board)
     position_3 = board[win_index_3]
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       win
-    else
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        winelse
       false
     end
-  puts someone_won
-  print current
   end
 end
