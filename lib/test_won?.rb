@@ -21,5 +21,5 @@ def won?(board)
     someone_won = true if win.all? {|i| board[i] == "O"}
     someone_won = false if win.any? {|i| board[i] == " "}
   end
-  someone_won
+  print someone_won
 end
