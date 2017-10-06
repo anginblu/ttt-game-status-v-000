@@ -21,7 +21,4 @@ def won?(board)
       current << i if position_taken?(board, i) && board[i] == "X"
     end
   end
-  unless current ==
-    false
-  end
 end
