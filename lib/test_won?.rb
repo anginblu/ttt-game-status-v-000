@@ -22,7 +22,5 @@ def won?(board)
       current << i if board[i] == "X"
     end
     current
-  else
-    someone_won
   end
 end
