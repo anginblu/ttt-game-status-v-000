@@ -21,6 +21,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win|
     win.all? do |i|
      board[i] == "X"
+   end
      puts current
    end
   end
