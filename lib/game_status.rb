@@ -17,6 +17,9 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 def won?(board)
   if board.all? {|draw| draw.is_a?(String)}
     WIN_COMBINATIONS.each do |win|
-      draw == "X"
+      win.each do |winning_index|
+      if winning_index == "X"
+  else
+    false
   end
 end
