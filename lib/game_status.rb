@@ -26,9 +26,9 @@ def won?(board)
         end
       end
     end
-
-    end
   end
+  WIN_COMBINATIONS.each do |win|
+    if current == win
 end
 
 def full?(board)
