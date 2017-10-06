@@ -18,6 +18,4 @@ def won?(board)
   if board.all? {|draw| draw.is_a?(String)}
     board.select do |draw|
       draw."X"?
-    win.each do |win_combination|
-
 end
