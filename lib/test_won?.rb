@@ -19,9 +19,11 @@ def won?(board)
     someone_won == false
     current = []
     win.all? do |i|
-      if board[i] == "X" || board[i] == "O"}
+      if board[i] == "X" || board[i] == "O"
         someone_won == true
         current = win
+      else 
+        false
     end
     someone_won
     current
