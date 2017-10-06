@@ -24,8 +24,9 @@ def won?(board)
       end
       if someone_won == true
         win
-      else 
+      else
         someone_won
+      end
     end
   else false
   end
