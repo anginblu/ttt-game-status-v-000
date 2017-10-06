@@ -19,11 +19,5 @@ def won?(board)
     current = []
     someone_won = true if win.all? {|i| board[i] == "X"}
     someone_won = true if win.all? {|i| board[i] == "O"}
-        current << i
-        someone_won == true
-      else
-        someone_won
-      end
-    end
   end
 end
