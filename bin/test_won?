@@ -3,4 +3,3 @@ require_relative '../lib/test_won?.rb'
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 
 print WIN_COMBINATIONS
-print win1
