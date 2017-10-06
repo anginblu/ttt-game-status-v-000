@@ -26,8 +26,8 @@ def won?(board)
     end
     current
     someone_won
-else
-  false
+  else
+    false
   end
 end
 
