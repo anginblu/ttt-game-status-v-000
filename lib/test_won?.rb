@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [win1, win2, win3, win4, win5, win6, win7, win8]
 
 def won?(board)
   WIN_COMBINATIONS.each do |win|
+    current = []
     win_index_1 = win[0]
     win_index_2 = win[1]
     win_index_3 = win[2]
@@ -23,13 +24,14 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      "[#{win_index_1}, #{win_index_2}, #{win_index_3}]"
+      current = [win_index_1, win_index_2, win_index_3]
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      "[#{win_index_1}, #{win_index_2}, #{win_index_3}]"
+      current = [win_index_1, win_index_2, win_index_3]
     else
       false
     end
   end
+  current if current.any?{|i| i.class == integer}
 end
 
 def full?(board)
