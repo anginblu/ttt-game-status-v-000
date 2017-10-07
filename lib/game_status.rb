@@ -66,8 +66,8 @@ def over?(board)
 end
 
 def winner?(board)
-  won?(board)
   if won?(board) != false
-
+    current.each do |i|
+      board 
   end
 end
