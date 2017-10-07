@@ -31,7 +31,7 @@ def won?(board)
       false
     end
   end
-  if current.any?{|i| i.class == Integer}
+  if current.any? {|i| i.class == Integer}
     current
   else
     false
