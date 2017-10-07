@@ -61,7 +61,7 @@ def over?(board)
   if full?(board) == true || won?(board) != false
      true
   else
-    true
+    false
   end
 end
 
