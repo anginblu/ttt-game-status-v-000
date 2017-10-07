@@ -69,3 +69,5 @@ end
 
 def winner?(board)
   if won?(board) !== false
+  end
+end
