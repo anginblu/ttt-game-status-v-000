@@ -68,7 +68,7 @@ end
 def winner?(board)
   winner = nil
   if won?(board) != false
-    winner = X if current.any? {|i| i = "X"}
+    current.any? {|i| i = "X"}
     winner = O if current.any? {|i| i = "O"}
 
     end
