@@ -26,9 +26,11 @@ def won?(board)
     if position_taken(board, win_index1] && position_taken(board, win_index2] && position_taken(board, win_index3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
       current = [win_index_1, win_index_2, win_index_3]
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       current = [win_index_1, win_index_2, win_index_3]
-      current
+      else
+        false
+      end 
     else
       false
     end
