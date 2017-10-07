@@ -69,6 +69,7 @@ def winner?(board)
   if won?(board) == false
     nil
   else
+    current = won?(board)
     board[current[1]]
   end
 end
