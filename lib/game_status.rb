@@ -69,8 +69,6 @@ def winner?(board)
   winner = nil
   if won?(board) != false
     current.detect{|i| i.is_a?(string)}
-    winner = O if current.any? {|i| i = "O"}
-
     end
   end
 end
