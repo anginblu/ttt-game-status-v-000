@@ -67,8 +67,7 @@ end
 
 def winner?(board)
   if won?(board) != false
-    current(1) = index
-    board[index]
+    board[current[1]]
   else
     nil
   end
