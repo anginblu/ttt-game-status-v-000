@@ -34,7 +34,7 @@ def won?(board)
     end
   end
   if current.any? {|i| i.class == Integer}
-    current
+    print "#{current}"
   else
     false
   end
