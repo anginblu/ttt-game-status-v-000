@@ -25,7 +25,7 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     if board[win_index_1] == "X" && board[win_index_1] == "X" && board[win_index_1] == "X"
-      prints [win[0], win[1], win[2]]
+      print [win[0], win[1], win[2]]
     end
   end
   if position_taken?(board, current[0])
