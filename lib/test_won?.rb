@@ -35,7 +35,7 @@ def won?(board)
     end
   end
   if someone_won
-    [win_index_1, win_index_2, win_index_3]
+    current
   else
     false
   end
