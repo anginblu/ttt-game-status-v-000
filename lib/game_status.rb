@@ -31,7 +31,7 @@ def won?(board)
     else
       false
     end
-  if someone_won == true
+  if someone_won
     [win_index_1, win_index_2, win_index_3]
   else
     false
