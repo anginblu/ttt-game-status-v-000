@@ -31,9 +31,6 @@ def won?(board)
       false
     end
   end
-  if current !== []
-    print "#{current}"
-  end
 end
 
 def full?(board)
