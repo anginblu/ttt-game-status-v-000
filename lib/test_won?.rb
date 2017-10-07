@@ -30,7 +30,7 @@ def won?(board)
       current = [win_index_1, win_index_2, win_index_3]
       current
     else
-      puts false
+      false
     end
   end
 end
