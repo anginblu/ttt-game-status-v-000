@@ -28,6 +28,7 @@ def won?(board)
       puts current
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       current = [win_index_1, win_index_2, win_index_3]
+      puts current
     else
       puts false
     end
