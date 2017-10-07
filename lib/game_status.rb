@@ -29,3 +29,22 @@ def won?(board)
     end
   end
 end
+
+def full?(board)
+  if board.all? {|draw| draw == "X" || draw == "O"}
+    true
+  else
+    false
+  end
+end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+    true
+  else
+    false
+  end
+end
+
+def over?(board)
+end
