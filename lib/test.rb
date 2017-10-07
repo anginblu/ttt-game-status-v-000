@@ -66,10 +66,10 @@ def over?(board)
 end
 
 def winner?(board)
-  won?(board)
   if won?(board) == false
     nil
   else
+    current = won?(board)
     board[current[1]]
   end
 end
