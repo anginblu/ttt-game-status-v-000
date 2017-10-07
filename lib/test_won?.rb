@@ -33,8 +33,6 @@ def won?(board)
   end
   if current !== []
     print "#{current}"
-  else
-    false
   end
 end
 
