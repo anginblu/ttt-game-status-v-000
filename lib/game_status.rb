@@ -58,9 +58,9 @@ def draw?(board)
 end
 
 def over?(board)
-  if full?(board) == true
+  if full?(board) == true 
     true
-  elsif full?(board) == true
+  elsif full?(board) == false !&& won?(board) == false
     true
   else
     true
