@@ -67,6 +67,7 @@ end
 
 def winner?(board)
   if won?(board) != false
+    current(1) = location
     board[current(0)]
     current.detect{|i| i.is_a?(string)}
   else
