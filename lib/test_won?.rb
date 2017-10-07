@@ -33,6 +33,9 @@ def won?(board)
   end
   if current.any?{|i| i.class == Integer}
     current
+  else
+    false
+  end
 end
 
 def full?(board)
