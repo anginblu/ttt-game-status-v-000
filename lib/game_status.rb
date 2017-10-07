@@ -73,5 +73,6 @@ def winner?(board)
       X
     else
       O
+    end
   end
 end
