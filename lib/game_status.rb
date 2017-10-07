@@ -72,5 +72,6 @@ def winner?(board)
     if current.any? {|i| i = "X"}
       X
     else
+      O
   end
 end
