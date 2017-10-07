@@ -27,7 +27,7 @@ def won?(board)
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       puts "[#{win_index_1}, #{win_index_2}, #{win_index_3}]"
     else
-      putsfalse
+      puts false
     end
   end
 end
