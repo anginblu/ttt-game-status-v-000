@@ -25,15 +25,17 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      true
+      someone_won = true
+      current = [win_index_1, win_index_2, win_index_3]
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      true
+      someone_won = true
+      current = [win_index_1, win_index_2, win_index_3]
     else
       false
     end
   end
   if someone_won
-    [win_index_1, win_index_2, win_index_3]
+    current
   else
     false
   end
