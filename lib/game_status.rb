@@ -70,6 +70,5 @@ def winner?(board)
     current.detect{|i| i.is_a?(string)}
   else
     nil
-    end
   end
 end
