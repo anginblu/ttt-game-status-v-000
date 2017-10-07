@@ -28,8 +28,5 @@ def won?(board)
     else
       print false
     end
-  if position_taken?(board, current[0])
-    puts current
   end
-end
 end
