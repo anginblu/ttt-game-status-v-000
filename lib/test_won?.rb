@@ -30,7 +30,7 @@ def won?(board)
       current = [win[0], win[1], win[2]]
     end
   end
-  if position_taken?(board, current)
+  if position_taken?(board, current[0])
     puts current
   end
 end
