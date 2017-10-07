@@ -1,3 +1,4 @@
 require_relative '../lib/test.rb'
 
-board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]puts winner?(board)
+board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+puts winner?(board)
