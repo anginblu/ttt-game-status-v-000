@@ -1,5 +1,5 @@
 require_relative '../lib/test_won?.rb'
 
-board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+board = ["P", "O", "O", " ", " ", " ", " ", " ", " "]
 
 puts won?(board)
