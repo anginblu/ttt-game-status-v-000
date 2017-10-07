@@ -69,7 +69,7 @@ def winner?(board)
   if won?(board) == false
     nil
   else
-    current.each do |i|
-      board 
+    if current.each do |i|
+      board
   end
 end
